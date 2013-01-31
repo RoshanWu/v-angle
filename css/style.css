@@ -291,3 +291,19 @@ body { background-color: #444; font: 12px/1.5 arial, sans-serif; color: #ccc; wo
 
 /* 8.31 新增 */
 #recAlbum li dl .desc { margin-bottom: 16px; }
+
+/* 13.1.31 新增风格挑选 */
+#stylePicker { width: 16px; height: 16px; margin-top: 2px; background: url(../images/stylepicker.png) no-repeat; }
+#styleAlbum { padding: 10px 0; }
+#styleAlbum li { width: 226px; height: 238px; float: left; }
+#style1 { background: url(../images/style/1-2.png) no-repeat; }
+#style2 { background: url(../images/style/2-2.png) no-repeat; }
+#style3 { background: url(../images/style/3-2.png) no-repeat; }
+#style4 { background: url(../images/style/4-2.png) no-repeat; }
+#style5 { background: url(../images/style/5-2.png) no-repeat; }
+#style6 { background: url(../images/style/6-2.png) no-repeat; }
+#style7 { background: url(../images/style/7-2.png) no-repeat; }
+#style8 { background: url(../images/style/8-2.png) no-repeat; }
+#styleAlbum .style-cover { width: 200px; height: 200px; margin: 10px 0 0 1px; background-color: #444; }
+#styleAlbum .style-cover img { box-shadow: 2px 3px 3px rgba(0,0,0,.7); opacity: .7; filter:alpha(opacity=70); }
+#styleAlbum .style-cover a:hover img { opacity: 1; filter:alpha(opacity=100); text-decoration: none; } 
