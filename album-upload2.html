@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/vangle.js"></script>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--#include virtual="/inc/header.inc.html"-->
+  <section class="wrap-set">
+    <p class="direct">提交新专辑<img src="/images/step.png" class="step" alt=""></p>
+    <ul class="complete-list">
+      <li>1、专辑打分：<img src="/images/temp/placeholder_03.png" style="vertical-align: -3px;"><em class="tip">（此为初始分，老人或撰稿人可能会有微调）</em></li>
+      <li>2、专辑情感分类（多选，但不超过两个）
+        <div class="mood-choose">
+          <span class="mood"><input type="checkbox" name="mood" id="mood1"><label for="mood1">小清新</label></span>
+          <span class="mood"><input type="checkbox" name="mood" id="mood2"><label for="mood2">温和舒适</label></span>
+          <span class="mood"><input type="checkbox" name="mood" id="mood3"><label for="mood3">伤感氛围</label></span>
+          <span class="mood"><input type="checkbox" name="mood" id="mood4"><label for="mood4">电子缥缈</label></span>
+          <span class="mood"><input type="checkbox" name="mood" id="mood5"><label for="mood5">另类活泼</label></span>
+          <span class="mood"><input type="checkbox" name="mood" id="mood6"><label for="mood6">激情力量</label></span>
+          <span class="mood"><input type="checkbox" name="mood" id="mood7"><label for="mood7">其它</label></span>
+        </div>
+      </li>
+      <li>3、添加试听曲目（不超过5首）<em class="tip">（请添加虾米网上存在的专辑歌曲，如果虾米没有，请联系老人：QQ 5574199)</em>
+        <div id="addDemos">
+          <div class="input-field">
+            <div class="left-pad">
+              <em class="example">填写格式严格如：http://www.xiami.com/song/1234567</em>
+                        <a href="" class="help">查看帮助</a></div>
+          </div>
+          <div class="input-field">
+            <span><label for="demo1">试听歌曲1地址</label></span>
+            <input type="text" class="txt" id="demo1">
+          </div>
+          <div class="input-field">
+            <span><label for="demo2">试听歌曲2地址</label></span>
+            <input type="text" class="txt" id="demo2">
+          </div>
+          <div class="input-field">
+            <span><label for="demo3">试听歌曲3地址</label></span>
+            <input type="text" class="txt" id="demo3">
+          </div>
+          <div class="input-field">
+            <span><label for="demo4">试听歌曲4地址</label></span>
+            <input type="text" class="txt" id="demo4">
+          </div>
+          <div class="input-field">
+            <span><label for="demo5">试听歌曲5地址</label></span>
+            <input type="text" class="txt" id="demo5">
+          </div>
+            <em class="try">填好试听地址后请点击“预览试听”，检查右侧</em><input type="button" value="预览试听">
+          <div class="stream">
+            <img src="/images/temp/placeholder_09.png" alt="">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="input-field">
+      <div class="left-pad">
+        <input type="button" value="发布专辑完成，进入该专辑页面" class="system-btn">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
