@@ -72,7 +72,7 @@ table{border-collapse:collapse;border-spacing:0;}
 .right li a { position: relative; }
 .right li .new { position: absolute; top: -8px; right: -10px; }
 .right .droplist { padding-top: 10px; }
-.nav-layer { position: absolute; background-color: #585858; padding: 3px 15px; top: 37px; }
+.nav-layer { position: absolute; background-color: #585858; padding: 3px 15px; top: 37px; z-index: 999; }
 .nav-layer li { float: none; margin: 0; }
 .nav-layer li a { display: block; line-height: 22px; color: #ccc; }
 .guild-text { margin-bottom: 50px; font-size: 16px; }
@@ -307,3 +307,18 @@ body { background-color: #444; font: 12px/1.5 arial, sans-serif; color: #ccc; wo
 #styleAlbum .style-cover { width: 200px; height: 200px; margin: 10px 0 0 1px; background-color: #444; }
 #styleAlbum .style-cover img { box-shadow: 2px 3px 3px rgba(0,0,0,.7); opacity: .7; filter:alpha(opacity=70); }
 #styleAlbum .style-cover a:hover img { opacity: 1; filter:alpha(opacity=100); text-decoration: none; } 
+
+/* 13.4.13 新增侧边导航块 */
+.side-nav { position: fixed; left: 0; top: 50%; }
+.side-nav .expand { display: block; position: absolute; width: 48px; height: 48px; background: url(../images/side.png) no-repeat; }
+.side-nav .expand-cont { position: absolute; width: 96px; margin-top: -27px; margin-left: -116px; padding: 10px 10px 15px; z-index: 999; background-color: #414141; }
+.side-nav h3 { margin: 2px 0 5px 3px; color: #909090; }
+.side-nav li { float: left; display: inline; margin: 0 3px; +margin: 0; }
+.side-nav li .peace { color: #b3d66f; }
+.side-nav li .joy { color: #f1a943; }
+.side-nav li .passion { color: #f26c62; }
+.side-nav li .alternative { color: #e5e5e5; }
+.side-nav li .dark { color: #ad8f26; }
+.side-nav li .illusion { color: #72a9b9; }
+.side-nav li .sad { color: #bd9a74; }
+.side-nav li .random { color: #a7a7a7; }

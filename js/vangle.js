@@ -36,4 +36,17 @@ $(function () {
         }, 500);
       });
   });
+
+  $('#hook').on('mouseenter', expandTask);
+  $('#dish').on('mouseleave', unexpandTask);
+
+  function expandTask() {
+    $('#hook').animate({ marginLeft: '-48px' }); 
+    $('#dish').animate({ marginLeft: '0' }); 
+  }
+
+  function unexpandTask() {
+    $('#dish').animate({ marginLeft: '-116px' });
+    $('#hook').animate({ marginLeft: '0' });
+  }
 });
