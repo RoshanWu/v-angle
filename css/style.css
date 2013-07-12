@@ -322,3 +322,28 @@ body { background-color: #444; font: 12px/1.5 arial, sans-serif; color: #ccc; wo
 .side-nav li .illusion { color: #72a9b9; }
 .side-nav li .sad { color: #bd9a74; }
 .side-nav li .random { color: #a7a7a7; }
+
+/* 13.5.23 */
+.icon_play {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+	background: url(../images/button_play.png) no-repeat 0 0;
+	vertical-align: middle;
+}
+.player a {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	color: #ccc;
+	text-decoration: none;
+}
+.player a:hover {
+	text-decoration: underline;
+}
+.player a:hover .icon_play {
+	background-position: 0 -48px;
+}

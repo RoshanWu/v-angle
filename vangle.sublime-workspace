@@ -367,7 +367,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 13592,
+				"buffer_size": 17122,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "album.html",
+			"settings":
+			{
+				"buffer_size": 8712,
 				"line_ending": "Windows"
 			}
 		},
@@ -375,7 +383,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 18243,
+				"buffer_size": 18676,
 				"line_ending": "Windows"
 			}
 		}
@@ -614,8 +622,8 @@
 						"selection":
 						[
 							[
-								1360,
-								1360
+								778,
+								778
 							]
 						],
 						"settings":
@@ -625,7 +633,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 145.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -642,15 +650,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13592,
+						"buffer_size": 17122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13481,
-								13481
+								4848,
+								4848
 							]
 						],
 						"settings":
@@ -660,7 +668,36 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5119.0,
+						"translation.y": 1591.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "album.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5302,
+								5302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2143.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -672,20 +709,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18243,
+						"buffer_size": 18676,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17954,
-								17954
+								18673,
+								18673
 							]
 						],
 						"settings":
@@ -693,7 +730,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4564.0,
+						"translation.y": 4926.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -915,7 +952,7 @@
 		[
 			[
 				"",
-				"~/Documents/eshop.sublime-workspace"
+				"~/Documents/sublime/Front.sublime-project"
 			]
 		],
 		"width": 380.0
