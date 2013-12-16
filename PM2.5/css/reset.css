@@ -1,0 +1,313 @@
+/* 
+ * @名称：reset
+ * @描述：重置浏览器默认样式（基于 http://github.com/necolas/normalize.css）
+ */
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1、设置默认字体
+ * 2、防止 iOS 文本在禁止用户缩放时的自我调整
+ */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/*
+ * 去除默认的外边距
+ */
+body,
+figure,
+p,
+pre,
+dl,
+dd {
+  margin: 0;
+}
+/* ==========================================================================
+   HTML 5 标签 `display` 重定义
+   ========================================================================== */
+/*
+ * 修正以下 HTML5 标签在 IE 8/9 中为块状元素（IE 6/7 需要 HTML5.js）
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/*
+ * 修正以下 HTML5 标签在 IE 8/9 中为内联块状元素（IE 6/7 需要 HTML5.js）
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/*
+ * 1、防止现代浏览器显示出没有控制器的媒体元素
+ * 2、在 iOS 设备中去除多余的高度
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/*
+ * 在 IE 7/8/9 中添加以下属性样式
+ */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   链接
+   ========================================================================== */
+/*
+ * 默认不显示下划线，保持页面简洁
+ */
+ins,
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  outline: 0;
+}
+/* ==========================================================================
+   内嵌内容
+   ========================================================================== */
+/*
+ * IE 8/9 中，去除图片在 `a` 标签中所显示的边框
+ */
+a img {
+  border: 0;
+}
+/*
+ * IE 9 中，纠正溢出的怪异显示
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/* 
+ * 1、去除表格单元格默认边距
+ * 2、`th`, `caption` 默认左对齐
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table caption,
+table th {
+  text-align: left;
+}
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * 1、去除列表默认前标，`li` 会继承
+ * 2、去除列表内外边距
+ */
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* ==========================================================================
+   文本
+   ========================================================================== */
+/*
+ * 统一标题，适应多个系统应用
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+}
+/*
+ * 统一的上标和下标样式
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/*
+ * 解决了样式在 IE 8/9, Safari 5, and Chrome 下无法呈现的问题
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*
+ * 设置一致的引用类型
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/*
+ * 解决了 `b` 和 `strong` 在 Firefox 4+, Safari 5, and Chrome 下可能显示为 `bolder` 的问题
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/*
+ * 解决了样式在 Safari 5 and Chrome 中无法呈现的问题
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * 代码字体
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/*
+ * 增强预格式化文本的可读性
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*
+ * `fieldset` 的重新定义，增强其可读性
+ */
+/* ==========================================================================
+   表单元素
+   ========================================================================== */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1、纠正在 IE 8/9 下无法正常继承 `color` 属性的 bug
+ * 2、移除 `padding` 防止其未嵌套在 `fieldset` 内时与其它元素不统一
+ */
+legend {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1、使得 `font-family` 可继承
+ * 2、对 IE 6/7 的 hack
+ * 3、使得 `font-size` 可继承
+ * 4、解决元素的 `margin` 属性在 Firefox 4+, Safari 5, and Chrome 不统一的 bug
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  *font-family: sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+/**
+ * 统一表单元素 `text-transform` 继承规则，其它表单元素都不继承此属性
+ */
+button,
+select {
+  text-transform: none;
+}
+/*
+ * 1、解决 Firefox 4+ 中元素 `line-height` 不受 `!important` hack 的影响
+ * 2、去除元素在 Firefox 4+ 中的内边距与边框
+ * 3、为 `disabled` 元素重置鼠标指针样式
+ */
+button,
+input {
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+/*
+ * 1、防止（2）在 Android 4.0.* 中破坏内建的 `audio` and `video` controls
+ * 2、使其在 iOS 设备中可点击
+ * 3、统一鼠标指针样式
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+/*
+ * 重设 `disable` 元素的鼠标样式
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/*
+ * 1、覆盖其 `box-sizing` 属性在 IE 8/9 中的默认值 `content-box`
+ * 2、去除其在 IE 8/9 中的默认内边距
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+/*
+ * 1、覆盖其 `appearance` 属性在 safari 5, and Chrome 中的默认值 `searchfield`
+ * 2、覆盖其 `box-sizing` 属性在 safari 5, and Chrome 中的默认值 `border-box` （包括未来的 `-moz-`）
+ * 3、去除 OS X 下的 safari 5, and Chrome 中元素内边距与默认搜索取消按钮
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * 1、去除在 IE 8/9 中默认的垂直滚动条
+ * 2、增强对齐统一性
+ */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}

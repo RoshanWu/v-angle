@@ -1,0 +1,32 @@
+﻿.container{
+	position:relative;
+	text-align:left;
+}
+
+.kwicks {
+	list-style:none;
+	position: relative;
+	color:#000;
+	padding-left:0px;
+	width:660px;
+}
+.kwicks li{
+	overflow: hidden;
+	padding: 0px;
+	float:left;
+	height:120px;
+	width:120px;
+	background-color:#C4DCF6;
+  margin-right: 9px;
+}
+
+.kwicks li.last { margin-right: 0; }
+.kwicks li img{ height:110px;width:110px; float:left;	border:solid 5px #c6c6c6;}
+.kwicks li .extension { height: 120px; background: #3c3c3c url(../images/star_5.gif) no-repeat right top; }
+.kwicks li dl { width: 230px; height: 93px; padding: 5px 0 0 10px; margin-left: 0; overflow: hidden; }
+.kwicks li dd, .kwicks li dt a { color: #ccc; }
+.kwicks li dt a { font-size: 14px;font-weight:bold; }
+.kwicks li .meta { text-align: right; color: #cccccc; padding-right: 10px; }
+.kwicks li .meta a { color: #cccccc; }
+
+
