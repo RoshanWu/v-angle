@@ -1,0 +1,63 @@
+.js-select {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 120px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #cecece;
+  padding: 6px 10px 5px 10px;
+  font-size: 14px;
+  outline: none;
+  -webkit-box-shadow: inset 2px 2px 5px #f3f3f3;
+  -moz-box-shadow: inset 2px 2px 5px #f3f3f3;
+  box-shadow: inset 2px 2px 5px #f3f3f3;
+}
+
+.js-select:hover {
+  border-color: #b4b4b4;
+}
+
+.js-select {
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.js-select .arrow {
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 6px;
+  top: 13px;
+  right: 9px;
+  background: url(../images/arrow-select.png) no-repeat;
+}
+
+.js-option {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #cecece;
+  zoom: 1;
+}
+
+.js-option li {
+  line-height: 30px;
+  padding: 0 10px;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.js-option li.active, .js-option li.selected {
+  background-color: #f6f6f6;
+}
