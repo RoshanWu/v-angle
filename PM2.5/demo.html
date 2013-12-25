@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>demo</title>
 	<link rel="stylesheet" href="css/reset.css" media="all">
+	<link rel="stylesheet" href="css/diyselect.css" media="all">
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/diyselect.js"></script>
+	<script src="js/pin.js"></script>
 	<style>
 		body {
 			font: 18px/1.5 \5FAE\8F6F\96C5\9ED1
@@ -70,7 +74,11 @@
 	<div class="container">
 		<div class="hd">
 			<div class="title">杭州实时空气质量（PM2.5 AQI）</div>
-			<div class="update">数据时间：2013-3-4  17:35:04</div>
+			<div class="update">数据更新时间：2013-12-25 22:00:00&nbsp;&nbsp;&nbsp;&nbsp;<a class="addfav" href="" onclick="addfav(document.URL, document.title);return false;">添加到收藏夹</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="addfav" href="http://www.v-angle.com/pm25/">杭州</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="addfav" href="http://www.v-angle.com/pm25/shanghai/">上海</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="addfav" href="http://www.v-angle.com/pm25/beijing/">北京</a>&nbsp;&nbsp;|&nbsp;&nbsp;<select name="city" id="city">
+				<option value="-1">请选择城市</option>
+				<option value="1">广州</option>
+				<option value="2">武汉</option>
+			</select></div>
 		</div>
 		<div class="bd">
 			<ul class="list">
@@ -146,5 +154,8 @@
 			<a href="">国标</a>
 		</div>
 	</div>
+	<script>
+	$('#city').diySelect();
+	</script>
 </body>
 </html>

@@ -169,8 +169,6 @@ DiySelect.prototype = {
 			var value = this.option[i].value;
 			var text = this.option[i].text;
 
-			if (text == this.option[i].text()) continue;
-
 			li.innerHTML = text;
 
 			if (value) { 
